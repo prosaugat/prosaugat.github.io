@@ -52,43 +52,7 @@
         <div class="container">
           <h2 class="text-center mt-5">Our Blog</h2>
           <p class="text-center mt-3">Stay up to date with the latest system administration news and tips:</p>
-          <div class="row mt-3">
-            <?php
-              $servername = "localhost";
-              $username = "your_username";
-              $password = "your_password";
-              $dbname = "your_dbname";
-              
-              // Create connection
-              $conn = mysqli_connect($servername, $username, $password, $dbname);
-              
-              // Check connection
-              if (!$conn) {
-                  die("Connection failed: " . mysqli_connect_error());
-              }
-              
-              $sql = "SELECT * FROM blog_posts ORDER BY id DESC LIMIT 3";
-              $result = mysqli_query($conn, $sql);
-              
-              if (mysqli_num_rows($result) > 0) {
-                  while($row = mysqli_fetch_assoc($result)) {
-                      echo '<div class="col-md-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">'.$row["title"].'</h5>
-                            <p class="card-text">'.substr($row["content"], 0, 100).'...</p>
-                            <a href="blog-post.php?id='.$row["id"].'" class="btn btn-primary">Read More</a>
-                          </div>
-                        </div>
-                      </div>';
-                  }
-              } else {
-                  echo "No blog posts found";
-              }
-              
-              mysqli_close($conn);
-            ?>
-          </div>
+         
         </div>
       </section>
       <section id="about">
