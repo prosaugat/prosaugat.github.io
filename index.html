@@ -1,87 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>SysAdmin Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">System Admin</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="services">
-        <div class="container">
-          <h2 class="text-center mt-5">Our Services</h2>
-          <p class="text-center mt-3">We offer a range of services for system administration, including:</p>
-          <ul class="list-group mt-3">
-            <li class="list-group-item">System setup and configuration</li>
-            <li class="list-group-item">Software installation and upgrades</li>
-            <li class="list-group-item">Data backup and recovery</li>
-            <li class="list-group-item">Network security and firewall management</li>
-                        <li class="list-group-item">Performance optimization and troubleshooting</li>
-            <li class="list-group-item">Remote and on-site support</li>
-          </ul>
-        </div>
-      </section>
-      <section id="about">
-        <div class="container">
-          <h2 class="text-center mt-5">About Us</h2>
-          <p class="text-center mt-3">We are a team of experienced system administrators who are passionate about helping businesses and individuals optimize their systems for maximum performance and security:</p>
-          <ul class="list-group mt-3">
-            <li class="list-group-item">10+ years of combined experience</li>
-            <li class="list-group-item">Certified in leading technologies</li>
-            <li class="list-group-item">Committed to providing top-notch customer service</li>
-            <li class="list-group-item">Available 24/7 for emergencies</li>
-          </ul>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="container">
-          <h2 class="text-center mt-5">Contact Us</h2>
-          <p class="text-center mt-3">Readyto take your systems to the next level? Let us know how we can help:</p>
-          <form action="contact.php" method="post">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </section>
-      <footer class="bg-light py-3">
-        <div class="container">
-          <p class="text-center">Copyright &copy; System Admin Website 2023</p>
-        </div>
-      </footer>
-    </body>
-  </html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Freelance System Admin | Your Name Here</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Freelance System Admin</h1>
+		<h2>Your Name Here</h2>
+		<nav>
+			<ul>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="services">
+			<h2>Services</h2>
+			<ul>
+				<li>
+					<h3>Server Configuration and Administration</h3>
+					<p>Let me take care of your server setup and management needs. I have experience with a variety of operating systems and server software, including:</p>
+					<ul>
+						<li>Linux (Ubuntu, Debian, CentOS)</li>
+						<li>Apache, Nginx</li>
+						<li>MySQL, PostgreSQL</li>
+						<li>PHP, Node.js, Python</li>
+						<li>Docker, Kubernetes</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Security and Backup Solutions</h3>
+					<p>Protect your data and ensure business continuity with my security and backup services. I can:</p>
+					<ul>
+						<li>Implement firewall rules and security best practices</li>
+						<li>Set up automated backup and disaster recovery processes</li>
+						<li>Perform regular security audits and vulnerability assessments</li>
+						<li>Provide security training and education for your team</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Cloud Computing and Infrastructure</h3>
+					<p>Take advantage of the scalability and flexibility of cloud computing with my infrastructure services. I can:</p>
+					<ul>
+						<li>Design and deploy cloud-based solutions using AWS, Azure, or Google Cloud Platform</li>
+						<li>Optimize cloud infrastructure for cost and performance</li>
+						<li>Monitor and manage cloud-based applications and services</li>
+						<li>Provide training and consulting on cloud technologies</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<form action="submit-form.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; Your Name Here | Freelance System Admin</p>
+	</footer>
+</body>
+</html>
