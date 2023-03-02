@@ -51,22 +51,22 @@ nav a:hover {
 /* Services section styles */
 #services {
   background-color: #f9f9f9;
-  height: 500px; /* set a fixed height */
-  overflow: scroll; /* add scrollbars */
+}
+
+#services h2 {
+  margin-bottom: 50px;
 }
 
 #services ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
-  padding: 0 20px; /* add padding to prevent items from sticking to the edge */
 }
 
 #services li {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-bottom: 20px; /* add margin to separate items */
 }
 
 #services h3 {
