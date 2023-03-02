@@ -58,22 +58,15 @@ nav a:hover {
 }
 
 #services ul {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
-  padding: 10px 0;
-  list-style: none;
-  margin: 0;
 }
 
 #services li {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 250px;
-  height: 200px;
-  flex: 0 0 auto;
 }
 
 #services h3 {
